@@ -21,18 +21,16 @@
           />
           <div class="header-main__student-content">
             <div class="header-main__student-text">
-              Студент Студентович Студентов <br />
-              СТ-370000 | 3 курс
+              <span>{{ student }}</span>
+              <span>{{ group }}</span>
             </div>
-            <a href="#" class="header-main__student-link"
-              >редактировать профиль</a
-            >
+            <a href="#" class="header-main__student-link">{{ profile }}</a>
             <a href="#" class="header-main__student-link">выйти</a>
           </div>
         </div>
       </div>
       <div class="header-main__subtitle">
-        <h3>Главная страница</h3>
+        <h3>{{ headerSubtitle }}</h3>
       </div>
     </div>
   </div>
@@ -41,10 +39,31 @@
 <script>
 export default {
   name: "HeaderMain",
+  props: {
+    headerSubtitle: {
+      type: String,
+      default: "",
+    },
+    student: {
+      type: String,
+      default: "",
+    },
+    group: {
+      type: String,
+      default: "",
+    },
+    profile: {
+      type: String,
+      default: "",
+    },
+  },
 };
 </script>
 
 <style>
+.header-main {
+  margin-bottom: 60px;
+}
 .header-main__top {
   display: flex;
   justify-content: space-between;
@@ -88,6 +107,9 @@ export default {
   max-width: 205px;
   margin-bottom: 28px;
 }
+.header-main__student-text span {
+  display: block;
+}
 .header-main__student-link {
   font-style: normal;
   font-weight: 300;
@@ -122,7 +144,7 @@ export default {
 .header-main__subtitle::after {
   content: "";
   position: absolute;
-  width: 256px;
+  width: 24%;
   height: 4px;
   background-color: #2f80ed;
   border-radius: 5px;

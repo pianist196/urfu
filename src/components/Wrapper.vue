@@ -1,16 +1,20 @@
 <template>
   <div class="wrapper">
-    <main-page></main-page>
+    <router-view></router-view>
+    <!-- <main-page />
+    <statistic-page /> -->
   </div>
 </template>
 
 <script>
-import MainPage from "./MainPage";
+// import MainPage from "./MainPage";
+// import StatisticPage from "./StatisticPage.vue";
 
 export default {
   name: "Wrapper",
   components: {
-    MainPage,
+    // MainPage,
+    // StatisticPage,
   },
 };
 </script>
