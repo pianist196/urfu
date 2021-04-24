@@ -81,6 +81,9 @@ export default {
 </script>
 
 <style>
+.resourse {
+  margin-bottom: 50px;
+}
 .resourse__wrapper {
   border: 1px solid rgba(61, 61, 61, 0.5);
   box-shadow: 6px 4px 20px rgba(0, 0, 0, 0.25);

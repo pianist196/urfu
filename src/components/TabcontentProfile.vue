@@ -95,7 +95,7 @@ export default {
   font-size: 18px;
   line-height: 21px;
   color: #2f80ed;
-  width: 350px;
+  width: 366px;
 }
 
 .tabs-profile a.active {

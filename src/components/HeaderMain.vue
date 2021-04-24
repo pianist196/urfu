@@ -151,4 +151,25 @@ export default {
   bottom: -2px;
   left: 0;
 }
+@media (max-width: 670px) {
+  .header-main__top {
+    display: block;
+  }
+  .header-main__logo {
+    display: block;
+  }
+  .header-main__logo img {
+    margin: 0 auto 30px;
+  }
+  .header-main__logo-text {
+    margin: 0 auto 30px;
+    text-align: center;
+  }
+  .header-main__studet {
+    justify-content: center;
+  }
+  .header-main__subtitle::after {
+    width: 53%;
+  }
+}
 </style>

@@ -31,7 +31,9 @@
       <div v-if="activetab === 1" class="tabcontent-profile">
         <tabcontent-profile />
       </div>
-      <div v-if="activetab === 2" class="tabcontent">Content for tab two</div>
+      <div v-if="activetab === 2" class="tabcontent-support">
+        <tabcontent-support />
+      </div>
       <div v-if="activetab === 3" class="tabcontent">Content for tab three</div>
     </div>
   </div>
@@ -39,8 +41,12 @@
 
 <script>
 import TabcontentProfile from "./TabcontentProfile.vue";
+import TabcontentSupport from "./TabcontentSupport";
 export default {
-  components: { TabcontentProfile },
+  components: {
+    TabcontentProfile,
+    TabcontentSupport,
+  },
   name: "tabs",
   data() {
     return {
@@ -51,41 +57,6 @@ export default {
 </script>
 
 <style>
-/* .container-tabs {
-  max-width: 1050px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-}
-.tabs__item {
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-}
-.tabs__item + .tabs__item {
-  margin-left: 130px;
-}
-.tabs__item-text {
-  font-style: normal;
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 21px;
-  color: #3d3d3d;
-  margin-left: 25px;
-  max-width: 175px;
-}
-.active {
-  background: rgba(0, 0, 0, 0.05);
-  border: 1px solid #2f80ed;
-  border-radius: 15px;
-  padding: 19px 29px;
-} */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 .container {
   max-width: 620px;
   min-width: 420px;
@@ -129,5 +100,33 @@ export default {
   color: #3d3d3d;
   margin-left: 25px;
   max-width: 175px;
+}
+@media (max-width: 1510px) {
+  .tabs a {
+    margin: 0 40px;
+  }
+}
+@media (max-width: 1280px) {
+  .tabs a {
+    margin: 0 20px;
+  }
+}
+@media (max-width: 1170px) {
+  .tabs {
+    margin-left: 90px;
+  }
+  .tabs a {
+    margin: 0;
+  }
+}
+@media (max-width: 1000px) {
+  .tabs {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+  .tabs a {
+    margin: 0 auto 30px;
+  }
 }
 </style>
