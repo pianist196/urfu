@@ -81,15 +81,6 @@ export default {
   width: 33px;
   height: 40px;
 }
-.competencies__title::after {
-  content: "";
-  position: absolute;
-  background-color: #2f80ed;
-  left: 0;
-  bottom: 0px;
-  width: 200px;
-  height: 4px;
-}
 .competencies__title h5 {
   font-style: normal;
   font-weight: 500;
@@ -97,7 +88,18 @@ export default {
   line-height: 21px;
   color: #3d3d3d;
   padding-left: 41px;
+  display: inline-block;
 }
+.competencies__title h5::after {
+  content: "";
+  position: absolute;
+  background-color: #2f80ed;
+  left: 0;
+  bottom: 0px;
+  width: 100%;
+  height: 4px;
+}
+
 .competencies__title span {
   font-style: normal;
   font-weight: 500;

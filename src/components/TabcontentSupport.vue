@@ -178,7 +178,6 @@ export default {
   line-height: 28px;
   color: #3d3d3d;
   border: 1px solid rgb(61, 61, 61, 0.3);
-  /* border-radius: 5px; */
   border-left: 5px solid #2f80ed;
   border-top: 0;
   padding: 20px;

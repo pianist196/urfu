@@ -14,16 +14,27 @@
             type="text"
             placeholder="Институт строительства и архите..."
           />
-          <!-- <img
-            class="resourse__input-svg-1"
-            :src="require('../assets/images/input-svg-1.svg')"
-            alt=""
-          /> -->
-          <input
-            class="resourse__input resourse__input-1"
-            type="text"
-            placeholder="Поиск по ФИО студента..."
-          />
+          <div class="resourse__input-wrapper">
+            <svg
+              width="17"
+              height="17"
+              viewBox="0 0 17 17"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15.8961 14.9136L15.8956 14.9131L11.6179 10.6354C12.4872 9.59139 13.0159 8.25238 13.0159 6.78822C13.0159 3.46356 10.3111 0.758789 6.98644 0.758789C3.66177 0.758789 0.957031 3.46356 0.957031 6.78822C0.957031 10.1129 3.6618 12.8177 6.98647 12.8177C8.45061 12.8177 9.78964 12.2889 10.8337 11.4191L15.1114 15.6968C15.2195 15.805 15.3617 15.8595 15.5035 15.8595C15.6452 15.8595 15.7869 15.8051 15.8948 15.6983L15.8961 15.6969C16.1117 15.4802 16.1117 15.1303 15.8961 14.9136ZM6.98647 11.7093C4.27316 11.7093 2.06541 9.50156 2.06541 6.78825C2.06541 4.07494 4.27314 1.86717 6.98647 1.86717C9.6998 1.86717 11.9075 4.07492 11.9075 6.78822C11.9075 9.50153 9.69977 11.7093 6.98647 11.7093Z"
+                fill="#CDCDCD"
+                stroke="#CDCDCD"
+                stroke-width="0.5"
+              />
+            </svg>
+            <input
+              class="resourse__input resourse__input-1"
+              type="text"
+              placeholder="Поиск по ФИО студента..."
+            />
+          </div>
         </div>
         <div class="resourse__table">
           <div class="resourse__table-title">
@@ -113,13 +124,19 @@ export default {
   padding-left: 12px;
   padding-bottom: 5px;
 }
-.resourse__input-svg-1 {
+.resourse__input-wrapper {
+  position: relative;
+}
+.resourse__input-wrapper svg {
   position: absolute;
-  right: 32%;
   padding-bottom: 1px;
   padding-right: 6px;
+  left: 1px;
+  bottom: 5px;
+  z-index: 5;
+  width: 40px;
+  height: 20px;
 }
-
 .resourse__input {
   border: 1px solid rgba(61, 61, 61, 0.5);
   box-sizing: border-box;
@@ -134,18 +151,6 @@ export default {
 }
 .resourse__input-1 {
   position: relative;
-}
-.resourse__input-1::before {
-  content: "";
-  position: absolute;
-  background-image: url("../assets/images/input-svg-1.svg");
-  background-repeat: no-repeat;
-  background-position: left center;
-  color: #cdcdcd;
-  left: 0;
-  bottom: 0;
-  width: 25px;
-  height: 25px;
 }
 .resourse__table {
   margin: 0 80px;

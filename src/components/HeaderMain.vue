@@ -32,6 +32,7 @@
       <div class="header-main__subtitle">
         <h3>{{ headerSubtitle }}</h3>
       </div>
+      <div class="header-main__subtitle-line"></div>
     </div>
   </div>
 </template>
@@ -120,6 +121,7 @@ export default {
   margin-top: 2px;
 }
 .header-main__subtitle {
+  display: inline-block;
   padding-left: 52px;
   padding-bottom: 15px;
   font-style: normal;
@@ -129,6 +131,7 @@ export default {
   color: #3d3d3d;
   border-bottom: 1px solid rgba(47, 128, 237, 0.3);
   position: relative;
+  white-space: nowrap;
 }
 .header-main__subtitle::before {
   content: "";
@@ -144,12 +147,15 @@ export default {
 .header-main__subtitle::after {
   content: "";
   position: absolute;
-  width: 24%;
+  width: 100%;
   height: 4px;
   background-color: #2f80ed;
   border-radius: 5px;
   bottom: -2px;
   left: 0;
+}
+.header-main__subtitle-line {
+  border: 1px solid rgba(47, 128, 237, 0.3);
 }
 @media (max-width: 670px) {
   .header-main__top {
@@ -167,9 +173,6 @@ export default {
   }
   .header-main__studet {
     justify-content: center;
-  }
-  .header-main__subtitle::after {
-    width: 53%;
   }
 }
 </style>
