@@ -159,4 +159,12 @@ export default {
   line-height: 21px;
   color: #3d3d3d;
 }
+@media (max-width: 1090px) {
+  .radio + .radio {
+    margin-left: 20px;
+  }
+  .competencies__image-radio-btn {
+    margin-left: 20px;
+  }
+}
 </style>

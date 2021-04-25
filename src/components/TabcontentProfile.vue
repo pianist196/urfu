@@ -96,6 +96,7 @@ export default {
   line-height: 21px;
   color: #2f80ed;
   width: 366px;
+  white-space: nowrap;
 }
 
 .tabs-profile a.active {

@@ -14,13 +14,13 @@
             type="text"
             placeholder="Институт строительства и архите..."
           />
-          <img
+          <!-- <img
             class="resourse__input-svg-1"
             :src="require('../assets/images/input-svg-1.svg')"
             alt=""
-          />
+          /> -->
           <input
-            class="resourse__input"
+            class="resourse__input resourse__input-1"
             type="text"
             placeholder="Поиск по ФИО студента..."
           />
@@ -131,6 +131,21 @@ export default {
   font-size: 18px;
   line-height: 21px;
   color: rgba(61, 61, 61, 0.5);
+}
+.resourse__input-1 {
+  position: relative;
+}
+.resourse__input-1::before {
+  content: "";
+  position: absolute;
+  background-image: url("../assets/images/input-svg-1.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  color: #cdcdcd;
+  left: 0;
+  bottom: 0;
+  width: 25px;
+  height: 25px;
 }
 .resourse__table {
   margin: 0 80px;

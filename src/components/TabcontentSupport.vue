@@ -178,7 +178,7 @@ export default {
   line-height: 28px;
   color: #3d3d3d;
   border: 1px solid rgb(61, 61, 61, 0.3);
-  border-radius: 5px;
+  /* border-radius: 5px; */
   border-left: 5px solid #2f80ed;
   border-top: 0;
   padding: 20px;
@@ -191,5 +191,12 @@ export default {
 }
 .accordion-item-head.active {
   border-bottom: 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #2f80ed;
+  border-bottom-left-radius: 0;
+  border-left: 5px solid #2f80ed;
 }
 </style>
