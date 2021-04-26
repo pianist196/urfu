@@ -95,7 +95,7 @@ export default {
   font-size: 18px;
   line-height: 21px;
   color: #2f80ed;
-  width: 366px;
+  width: 368px;
   white-space: nowrap;
 }
 
@@ -115,6 +115,7 @@ export default {
   box-shadow: 6px 4px 20px rgba(0, 0, 0, 0.25);
   border-radius: 15px;
   border-top-left-radius: 0;
+  border-top-right-radius: 0;
   margin-bottom: 50px;
 }
 </style>

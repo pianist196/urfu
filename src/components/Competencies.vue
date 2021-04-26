@@ -24,17 +24,38 @@
         <div class="competencies__image-radio-title">По итогам:</div>
         <div class="competencies__image-radio-btn">
           <div class="radio">
-            <input class="radio__input" name="male" type="radio" id="radio_2" />
+            <input
+              class="radio__input"
+              name="male"
+              type="radio"
+              id="radio_2"
+              value="0"
+              v-model.number="someProperty"
+            />
             <label class="radio__label" htmlFor="radio_2">1-го курса</label>
           </div>
 
           <div class="radio">
-            <input class="radio__input" name="male" type="radio" id="radio_3" />
+            <input
+              class="radio__input"
+              name="male"
+              type="radio"
+              id="radio_3"
+              value="1"
+              v-model.number="someProperty"
+            />
             <label class="radio__label" htmlFor="radio_3">2-го курса</label>
           </div>
 
           <div class="radio">
-            <input class="radio__input" name="male" type="radio" id="radio_4" />
+            <input
+              class="radio__input"
+              name="male"
+              type="radio"
+              id="radio_4"
+              value="2"
+              v-model.number="someProperty"
+            />
             <label class="radio__label" htmlFor="radio_4">3-го курса</label>
           </div>
         </div>
@@ -47,6 +68,11 @@
 <script>
 export default {
   name: "Competencies",
+  data() {
+    return {
+      someProperty: 0,
+    };
+  },
 };
 </script>
 
@@ -96,7 +122,7 @@ export default {
   background-color: #2f80ed;
   left: 0;
   bottom: 0px;
-  width: 100%;
+  width: 50%;
   height: 4px;
 }
 
