@@ -11,28 +11,6 @@
       <div class="resourse__table-item-enter">23:53 21.01.2020</div>
       <a href="#" class="resourse__table-item-history">посмотреть</a>
     </div>
-    <div class="resourse__table-item">
-      <div class="resourse__table-item-group">СТ-370000</div>
-      <div class="resourse__table-item-student">
-        Студент Студентович Студентов
-      </div>
-      <div class="resourse__table-item-agent">
-        Google Chrome/5.0 (windows NT, MSIE 6.0 SV1;...
-      </div>
-      <div class="resourse__table-item-enter">23:53 21.01.2020</div>
-      <a href="#" class="resourse__table-item-history">посмотреть</a>
-    </div>
-    <div class="resourse__table-item">
-      <div class="resourse__table-item-group">СТ-370000</div>
-      <div class="resourse__table-item-student">
-        Студент Студентович Студентов
-      </div>
-      <div class="resourse__table-item-agent">
-        Google Chrome/5.0 (windows NT, MSIE 6.0 SV1;...
-      </div>
-      <div class="resourse__table-item-enter">23:53 21.01.2020</div>
-      <a href="#" class="resourse__table-item-history">посмотреть</a>
-    </div>
   </div>
 </template>
 

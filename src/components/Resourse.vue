@@ -55,8 +55,8 @@
 import ResourseItem from "./ResourseItem";
 
 export default {
-  components: { ResourseItem },
   name: "Resourse",
+  components: { ResourseItem },
 };
 </script>
 
