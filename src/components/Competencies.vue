@@ -61,7 +61,9 @@
         </div>
       </div>
       <!-- <img :src="require('../assets/images/competencies-image.png')" alt="" /> -->
-      <canvas ref="canvas"></canvas>
+      <div class="competencies__image-canvas">
+        <canvas ref="canvas"></canvas>
+      </div>
     </div>
   </div>
 </template>
@@ -196,6 +198,8 @@ export default {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  margin-left: 181px;
+  margin-bottom: 40px;
 }
 .competencies__image-radio-btn {
   display: flex;
